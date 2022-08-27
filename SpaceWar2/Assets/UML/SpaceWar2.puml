@@ -1,0 +1,8 @@
+@startuml SpaceWar2
+
+interface Iship{
+
+}
+
+
+@enduml

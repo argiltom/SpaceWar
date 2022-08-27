@@ -1,0 +1,56 @@
+@startuml SpaceWar2
+
+interface Iship{
+
+}
+class Controller{
+
+}
+class Status{       
+}
+
+class Move{
+    
+}
+
+class Authority{
+    
+}
+class Belong{
+    +belongEnum
+}
+class Weapon{
+    +ship
+}
+class GameManager{
+    +ships
+}
+class AnyShips{
+
+}
+class BulletBase{
+
+}
+class NomalBullet{
+
+}
+Controller --u|> Iship
+Status --*Controller
+Move --*Controller
+Authority --*Controller
+/'Controller ..>Controller'/
+Belong --*Controller
+Weapon..>Iship
+Weapon}--Controller
+
+Iship}--GameManager
+
+AnyShips--u|>Controller
+NomalBullet--u|>BulletBase
+
+
+/'docker run -d -p 8080:8080 plantuml/plantuml-server:jetty'/
+/'してから、alt + D すること'/
+
+/'https://qiita.com/devopsCoordinator/items/213e45694dfac0edcfbc'/
+@enduml
