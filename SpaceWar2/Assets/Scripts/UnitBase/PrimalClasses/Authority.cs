@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Concurrent;//上手く使えるか分からないな・・・
 /// <summary>
 /// 艦隊指揮・披指揮 艦同士の関係が木構造で構成されるようになる
 /// </summary>
@@ -119,7 +120,7 @@ public class Authority : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        flushingTimer = DelayTimer.DelayTimerConstructor(gameObject,1);
+        flushingTimer = DelayTimer.DelayTimerConstructor(gameObject, 5);
         
     }
 
