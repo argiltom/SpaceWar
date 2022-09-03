@@ -13,14 +13,18 @@ public class BelongColorSetter : MonoBehaviour
     List<Color> belongColors= new List<Color>();
     MeshRenderer meshRenderer;
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        meshRenderer = GetComponent<MeshRenderer>();
         belongColors.Add(Players);
         belongColors.Add(Enemy1);
         belongColors.Add(Enemy2);
         belongColors.Add(Enemy3);
         belongColors.Add(Enemy4);
+    }
+    void Start()
+    {
+        meshRenderer = GetComponent<MeshRenderer>();
+        
         meshRenderer.material.color = belongColors[(int)belong.belongEnum];
     }
 
