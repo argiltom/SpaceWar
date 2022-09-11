@@ -339,11 +339,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponName: gun
-  bullet: {fileID: 5823553256378755848, guid: 2f28c0ebaee7f8f4981fea617d9ced0b, type: 3}
+  bullet: {fileID: 8880245137209085557, guid: 480cddc56358d2b4092a6b12249e02e3, type: 3}
   attackDelay: 1.2
   reflectAtkRate: 1
   fixDamage: 1
-  bulletSpeed: 200
+  bulletSpeed: 1200
   bulletSizeRate: 0.5
   shootingPoint: {fileID: 0}
   isLookingDestination: 1
