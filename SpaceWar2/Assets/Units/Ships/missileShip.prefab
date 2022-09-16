@@ -443,7 +443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: gun
   bullet: {fileID: 909277036563663858, guid: 468c5c83f534eb64c9e0d870b01225c5, type: 3}
-  attackDelay: 4
+  attackDelayRange: {x: 4, y: 7}
   reflectAtkRate: 2
   fixDamage: 1
   bulletSpeed: 100
@@ -652,7 +652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: gun
   bullet: {fileID: 909277036563663858, guid: 468c5c83f534eb64c9e0d870b01225c5, type: 3}
-  attackDelay: 6
+  attackDelayRange: {x: 4, y: 7}
   reflectAtkRate: 2
   fixDamage: 1
   bulletSpeed: 100
@@ -768,7 +768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: gun
   bullet: {fileID: 909277036563663858, guid: 468c5c83f534eb64c9e0d870b01225c5, type: 3}
-  attackDelay: 5
+  attackDelayRange: {x: 4, y: 7}
   reflectAtkRate: 2
   fixDamage: 1
   bulletSpeed: 100
@@ -977,7 +977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: gun
   bullet: {fileID: 909277036563663858, guid: 468c5c83f534eb64c9e0d870b01225c5, type: 3}
-  attackDelay: 7
+  attackDelayRange: {x: 4, y: 7}
   reflectAtkRate: 2
   fixDamage: 1
   bulletSpeed: 100

@@ -10,7 +10,10 @@ public class Weapon : MonoBehaviour
     [SerializeField] string weaponName;
     [SerializeField] GameObject bullet;
 
-    [SerializeField] float attackDelay;
+    //[SerializeField] float attackDelay;
+    [SerializeField] Vector2 attackDelayRange = new Vector2(0,1);
+    float maxTimeCount;
+    float timeCount;
     //ダメージ設定部
     [SerializeField] float reflectAtkRate = 1;
     [SerializeField] float fixDamage = 0;
@@ -31,7 +34,7 @@ public class Weapon : MonoBehaviour
             return ship.Move.target;
         }
     }
-    DelayTimer delayTimer;
+    //DelayTimer delayTimer;
     public string WeaponName
     {
         get
@@ -44,7 +47,8 @@ public class Weapon : MonoBehaviour
 
     protected void Start()
     {
-        delayTimer = DelayTimer.DelayTimerConstructor(gameObject, attackDelay);
+        //delayTimer = DelayTimer.DelayTimerConstructor(gameObject, attackDelay);
+        maxTimeCount = Random.Range(attackDelayRange.x, attackDelayRange.y);
         defaultRotation = transform.rotation;
     }
     protected void Update()
@@ -60,10 +64,11 @@ public class Weapon : MonoBehaviour
                 SettingDefaultRotation(rotArg);
             }
         }
+        timeCount += Time.deltaTime;
     }
     public void Fire()
     {
-        if (delayTimer.IsArrival)
+        if (timeCount>=maxTimeCount)
         {
             GameObject summoned;
             if (shootingPoint == null)
@@ -84,7 +89,9 @@ public class Weapon : MonoBehaviour
             
             Belong summonedBulletBelong = summoned.GetComponent<Belong>();
             summonedBulletBelong.belongEnum = ship.Belong.belongEnum;
-            delayTimer.ResetCount();
+            timeCount = 0;
+            maxTimeCount = Random.Range(attackDelayRange.x, attackDelayRange.y);
+            //delayTimer.ResetCount();
         }
         
     }

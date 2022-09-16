@@ -623,6 +623,7 @@ MonoBehaviour:
   weaponName: aaa
   bullet: {fileID: 5505407742403069472, guid: f5fc6bfd615a9884895698937b977d55, type: 3}
   attackDelay: 0.1
+  attackDelayRange: {x: 0.1, y: 0.1}
   reflectAtkRate: 1
   fixDamage: 1
   bulletSpeed: 300
@@ -878,6 +879,7 @@ MonoBehaviour:
   weaponName: "\u30DE\u30B7\u30F3\u30AC\u30F3\u03B1"
   bullet: {fileID: 5505407742403069472, guid: f5fc6bfd615a9884895698937b977d55, type: 3}
   attackDelay: 0.1
+  attackDelayRange: {x: 0.1, y: 0.1}
   reflectAtkRate: 1
   fixDamage: 1
   bulletSpeed: 300

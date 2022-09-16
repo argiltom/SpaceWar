@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: gun
   bullet: {fileID: 665453562305004793, guid: bfd9c34a53eaef342921428d0a700b90, type: 3}
-  attackDelay: 1.2
+  attackDelayRange: {x: 1, y: 2}
   reflectAtkRate: 1
   fixDamage: 1
   bulletSpeed: 2500

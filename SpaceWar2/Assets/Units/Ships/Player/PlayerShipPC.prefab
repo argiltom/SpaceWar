@@ -95,11 +95,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: NomalGun
   bullet: {fileID: 909277036563663858, guid: 468c5c83f534eb64c9e0d870b01225c5, type: 3}
-  attackDelay: 0.1
+  attackDelayRange: {x: 0.1, y: 0.1}
   reflectAtkRate: 4
   fixDamage: 0
   bulletSpeed: 120
   bulletSizeRate: 1
+  shootingPoint: {fileID: 0}
   isLookingDestination: 1
   rotArg: 0.5
 --- !u!1 &3491099794446816546
@@ -355,11 +356,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: NomalGun
   bullet: {fileID: 665453562305004793, guid: bfd9c34a53eaef342921428d0a700b90, type: 3}
-  attackDelay: 0.1
+  attackDelayRange: {x: 0.2, y: 0.2}
   reflectAtkRate: 2
   fixDamage: 0
   bulletSpeed: 10000
   bulletSizeRate: 1
+  shootingPoint: {fileID: 0}
   isLookingDestination: 1
   rotArg: 0.5
 --- !u!1 &6836672058507768001
@@ -588,6 +590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 40
+  rotArgRate: {x: 1, y: 1, z: 1}
   takeDistanceFromTargetRange: {x: 0, y: 0}
   takeDistanceFromTarget: 0
 --- !u!114 &7649807128779516505
@@ -839,11 +842,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: NomalGun
   bullet: {fileID: 5823553256378755848, guid: 2f28c0ebaee7f8f4981fea617d9ced0b, type: 3}
-  attackDelay: 0.05
+  attackDelayRange: {x: 0.1, y: 0.1}
   reflectAtkRate: 2
   fixDamage: 0
   bulletSpeed: 400
   bulletSizeRate: 0.5
+  shootingPoint: {fileID: 0}
   isLookingDestination: 1
   rotArg: 0.5
 --- !u!1001 &1245947097461822154

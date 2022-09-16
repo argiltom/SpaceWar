@@ -1248,6 +1248,7 @@ MonoBehaviour:
   weaponName: gun
   bullet: {fileID: 8880245137209085557, guid: 684b9ad7f9f26e544af53fdad7e122a9, type: 3}
   attackDelay: 1.2
+  attackDelayRange: {x: 1, y: 1.2}
   reflectAtkRate: 1
   fixDamage: 1
   bulletSpeed: 600
