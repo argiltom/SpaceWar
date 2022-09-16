@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour
     public IShip ship;
     [SerializeField] string weaponName;
     [SerializeField] GameObject bullet;
+
     [SerializeField] float attackDelay;
     //ダメージ設定部
     [SerializeField] float reflectAtkRate = 1;

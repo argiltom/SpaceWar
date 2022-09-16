@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427356984501238076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.5}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 1.624}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.75}
   m_Children: []
   m_Father: {fileID: 8880245137209085558}
   m_RootOrder: 1
@@ -110,7 +110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &693750887832510834
 Transform:
   m_ObjectHideFlags: 0
@@ -119,7 +119,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839912953629175787}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 7.500001, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.39999998, y: 0.3999999, z: 2}
   m_Children: []
   m_Father: {fileID: 8603028609184894870}
@@ -165,7 +165,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.15
+  m_Time: 2
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -174,9 +174,18 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.21559143
+        value: 1
         inSlope: 0
         outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.68395144
+        value: 0.23652196
+        inSlope: -1.2969713
+        outSlope: -1.2969713
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
@@ -416,8 +425,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2579845400830080133}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: -0, z: 0.621}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 8880245137209085558}
   m_RootOrder: 0
@@ -689,7 +698,7 @@ GameObject:
   - component: {fileID: 8140469705853280875}
   - component: {fileID: -8279531188552949126}
   m_Layer: 0
-  m_Name: AcpBullet
+  m_Name: LongBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -763,7 +772,7 @@ MonoBehaviour:
     type: 3}
   bulletHitSound: {fileID: 3992820729132694924, guid: 2b1c8e03bdc6cd345bc0c65fb0214e94,
     type: 3}
-  duration: 8
+  duration: 12
   explosionCaster: {fileID: 8140469705853280875}
 --- !u!114 &8140469705853280875
 MonoBehaviour:
@@ -782,7 +791,7 @@ MonoBehaviour:
   emissionColor: {r: 0.5, g: 0.21372549, b: 0, a: 0}
   explosionColor: {r: 1, g: 0.54481244, b: 0, a: 0.47058824}
   explosionTime: 0.5
-  explosionRange: {x: 0, y: 1}
+  explosionRange: {x: 0, y: 2}
 --- !u!136 &-8279531188552949126
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -794,6 +803,6 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.25
-  m_Height: 1.5
+  m_Height: 2.76055
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.63}

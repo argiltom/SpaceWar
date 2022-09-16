@@ -217,6 +217,9 @@ MonoBehaviour:
   - summonShip: {fileID: 8896628259864071385, guid: 3f9d81332ba53b541b369f6c41186703,
       type: 3}
     summonDelay: 15
+  - summonShip: {fileID: 797315001453869486, guid: e916aa287182c734b9c88636bcac5b30,
+      type: 3}
+    summonDelay: 30
   explosionCaster: {fileID: -1139891444136987826}
 --- !u!114 &2731942537915050238
 MonoBehaviour:
