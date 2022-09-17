@@ -21,6 +21,10 @@ public class UIController : MonoBehaviour
     {
         SceneManager.LoadScene("presentationScene");
     }
+    public void NewGameVR()
+    {
+        SceneManager.LoadScene("presentationSceneVR");
+    }
     public void LoadGame()
     {
 

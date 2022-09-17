@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponName: NomalShooter
-  bullet: {fileID: 5823553256378755848, guid: 2f28c0ebaee7f8f4981fea617d9ced0b, type: 3}
-  attackDelayRange: {x: 0.1, y: 0.2}
+  bullet: {fileID: 8880245137209085557, guid: 480cddc56358d2b4092a6b12249e02e3, type: 3}
+  attackDelayRange: {x: 0.01, y: 0.02}
   reflectAtkRate: 1
   fixDamage: 0
   bulletSpeed: 100
-  bulletSizeRate: 1
+  bulletSizeRate: 0.5
   shootingPoint: {fileID: 0}
   isLookingDestination: 0
   rotArg: 0
@@ -94,9 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f4adc7937717b44bea54e4fcc346ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHp: 100
+  MaxHp: 10000
   hp: 0
-  atk: 5
+  atk: 8
   def: 0
   score: 0
 --- !u!54 &6277401957821230770
@@ -230,17 +230,22 @@ PrefabInstance:
     - target: {fileID: 4501070222703493211, guid: 990c073de8ca10d41874791076a052a2,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.005
+      value: 0.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4501070222703493211, guid: 990c073de8ca10d41874791076a052a2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: 4501070222703493211, guid: 990c073de8ca10d41874791076a052a2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4501070222703493211, guid: 990c073de8ca10d41874791076a052a2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4501070222703493211, guid: 990c073de8ca10d41874791076a052a2,
         type: 3}
@@ -361,6 +366,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: MainCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 5127234717043832557, guid: d45ca579b885c4c499e3e6b8f056163d,
+        type: 3}
+      propertyPath: far clip plane
+      value: 10000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d45ca579b885c4c499e3e6b8f056163d, type: 3}
 --- !u!4 &8810282752409411037 stripped
@@ -423,7 +433,7 @@ PrefabInstance:
     - target: {fileID: 269550649054039679, guid: 25079e5c6bc858c40a163f07ef1341e4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 269550649054039679, guid: 25079e5c6bc858c40a163f07ef1341e4,
         type: 3}
