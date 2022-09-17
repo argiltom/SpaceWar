@@ -80,18 +80,6 @@ public class PlayerShipControllerPC : ControllerBase
         }
         playerData.playerHp = status.hp;
         playerData.playerScore = status.score;
-        GameClearJudge();
-    }
-    public void GameClearJudge()
-    {
-        if (gameManager.NumberOfShips(BelongEnum.Enemy1) == 0
-            && gameManager.NumberOfShips(BelongEnum.Enemy2) == 0
-            && gameManager.NumberOfShips(BelongEnum.Enemy3) == 0
-            && gameManager.NumberOfShips(BelongEnum.Enemy4) == 0
-            )
-        {
-            SceneManager.LoadScene("GameClear");
-        }
     }
 }
 

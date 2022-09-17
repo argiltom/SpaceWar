@@ -556,9 +556,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f4adc7937717b44bea54e4fcc346ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHp: 10000
+  MaxHp: 1000
   hp: 0
-  atk: 5
+  atk: 10
   def: 1
   score: 0
 --- !u!54 &7649807128779516503
@@ -955,12 +955,12 @@ PrefabInstance:
     - target: {fileID: 269550649054039679, guid: 25079e5c6bc858c40a163f07ef1341e4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.31
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 269550649054039679, guid: 25079e5c6bc858c40a163f07ef1341e4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.03
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 269550649054039679, guid: 25079e5c6bc858c40a163f07ef1341e4,
         type: 3}

@@ -16,9 +16,9 @@ MonoBehaviour:
   bullet: {fileID: 8880245137209085557, guid: 480cddc56358d2b4092a6b12249e02e3, type: 3}
   attackDelayRange: {x: 0.01, y: 0.02}
   reflectAtkRate: 1
-  fixDamage: 0
+  fixDamage: 1
   bulletSpeed: 100
-  bulletSizeRate: 0.5
+  bulletSizeRate: 0.25
   shootingPoint: {fileID: 0}
   isLookingDestination: 0
   rotArg: 0
@@ -240,7 +240,7 @@ PrefabInstance:
     - target: {fileID: 4501070222703493211, guid: 990c073de8ca10d41874791076a052a2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4501070222703493211, guid: 990c073de8ca10d41874791076a052a2,
         type: 3}
@@ -433,7 +433,7 @@ PrefabInstance:
     - target: {fileID: 269550649054039679, guid: 25079e5c6bc858c40a163f07ef1341e4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 269550649054039679, guid: 25079e5c6bc858c40a163f07ef1341e4,
         type: 3}

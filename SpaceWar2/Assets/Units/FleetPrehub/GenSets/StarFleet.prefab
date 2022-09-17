@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3331654901498203485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3331654901498203484}
+  - component: {fileID: 6475242467276979932}
+  - component: {fileID: 7604223456819122446}
+  - component: {fileID: 3331654901498203487}
+  m_Layer: 0
+  m_Name: StarFleet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3331654901498203484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331654901498203485}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6475242467276979932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331654901498203485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a4fda516b2a9241891dca2e4c8f9ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  formation: {fileID: 7604223456819122446}
+  flagShip: {fileID: 4511997814726821706, guid: 88e54ac3b77585747bcf3efe05bf9277,
+    type: 3}
+  childShips:
+  - {fileID: 797315001453869486, guid: e916aa287182c734b9c88636bcac5b30, type: 3}
+  - {fileID: 797315001453869486, guid: e916aa287182c734b9c88636bcac5b30, type: 3}
+  - {fileID: 797315001453869486, guid: e916aa287182c734b9c88636bcac5b30, type: 3}
+  - {fileID: 797315001453869486, guid: e916aa287182c734b9c88636bcac5b30, type: 3}
+  generateImmdiate: 0
+--- !u!114 &7604223456819122446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331654901498203485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe8edc41cdd3c642910efcd630d2853, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPuttingImmediate: 1
+  fleetAttackRange: 2000
+  distance: 300
+  longOfForward: 50
+--- !u!114 &3331654901498203487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331654901498203485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7588a6a03f0e99a4c92dc1e3c9818f32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rateOfsizeOnLader: 1
+  belongData: 0

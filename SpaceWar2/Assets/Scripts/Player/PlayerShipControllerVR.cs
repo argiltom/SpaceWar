@@ -48,11 +48,19 @@ public class PlayerShipControllerVR : ControllerBase
 
 
         //押しっぱなし
-        if (OVRInput.Get(OVRInput.Button.Two, rightController))
+        //if (OVRInput.Get(OVRInput.Button.Two, rightController))
+        //{
+        //    weapons[0].Fire();
+        //}
+        //if (OVRInput.Get(OVRInput.Button.Two, leftController))
+        //{
+        //    weapons[1].Fire();
+        //}
+        if (rightPrimaryIndexTrigger>0.75f)
         {
             weapons[0].Fire();
         }
-        if (OVRInput.Get(OVRInput.Button.Two, leftController))
+        if (leftPrimaryIndexTrigger > 0.75f)
         {
             weapons[1].Fire();
         }

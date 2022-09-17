@@ -49,7 +49,7 @@ public class UICameraRig : MonoBehaviour
             if (ui != null)
             {
                 ui.Seeking();
-                if(rightPrimaryHandTrigger > 0.5f)
+                if(rightPrimaryHandTrigger > 0.7f|| rightPrimaryIndexTrigger > 0.7f)
                 {
                     ui.Pushed();
                 }

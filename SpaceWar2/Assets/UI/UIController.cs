@@ -33,6 +33,18 @@ public class UIController : MonoBehaviour
     {
         SceneManager.LoadScene("GameTitle");
     }
+    public void GameTitleVR()
+    {
+        SceneManager.LoadScene("GameTitleVR");
+    }
+    public void GameClear()
+    {
+        SceneManager.LoadScene("GameClear");
+    }
+    public void GameClearVR()
+    {
+        SceneManager.LoadScene("GameClearVR");
+    }
     public void ExitGame()
     {
 #if UNITY_EDITOR
