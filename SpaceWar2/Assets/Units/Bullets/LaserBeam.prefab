@@ -126,11 +126,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   belong: {fileID: 6080274746890669268}
-  Players: {r: 0, g: 0, b: 0, a: 0}
-  Enemy1: {r: 0, g: 0, b: 0, a: 0}
-  Enemy2: {r: 0, g: 0, b: 0, a: 0}
-  Enemy3: {r: 0, g: 0, b: 0, a: 0}
-  Enemy4: {r: 0, g: 0, b: 0, a: 0}
+  Players: {r: 1, g: 1, b: 1, a: 0.49803922}
+  Enemy1: {r: 1, g: 0, b: 0, a: 0.49803922}
+  Enemy2: {r: 0, g: 1, b: 0, a: 0.49803922}
+  Enemy3: {r: 1, g: 1, b: 0, a: 0.49803922}
+  Enemy4: {r: 0, g: 0, b: 1, a: 0.49803922}
 --- !u!114 &2726747355702663396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,11 +144,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   belong: {fileID: 6080274746890669268}
-  Players: {r: 1, g: 1, b: 1, a: 0}
-  Enemy1: {r: 1, g: 0, b: 0, a: 0}
-  Enemy2: {r: 0, g: 1, b: 0, a: 0}
-  Enemy3: {r: 1, g: 1, b: 0, a: 0}
-  Enemy4: {r: 0, g: 0, b: 1, a: 0}
+  Players: {r: 1.0039216, g: 1.0039216, b: 1.0039216, a: 0}
+  Enemy1: {r: 1.0039217, g: 0, b: 0, a: 0}
+  Enemy2: {r: 0, g: 2.0078433, b: 0, a: 0}
+  Enemy3: {r: 1.0039216, g: 1.0039216, b: 0, a: 0}
+  Enemy4: {r: 0, g: 0, b: 1.0039216, a: 0}
 --- !u!54 &9060396309613020341
 Rigidbody:
   m_ObjectHideFlags: 0

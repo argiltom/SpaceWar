@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: NomalShooter
   bullet: {fileID: 5823553256378755848, guid: 2f28c0ebaee7f8f4981fea617d9ced0b, type: 3}
-  attackDelay: 0.1
+  attackDelayRange: {x: 0.1, y: 0.2}
   reflectAtkRate: 1
   fixDamage: 0
   bulletSpeed: 100
+  bulletSizeRate: 1
+  shootingPoint: {fileID: 0}
   isLookingDestination: 0
   rotArg: 0
 --- !u!114 &7133111429958275508
@@ -34,10 +36,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: leftWeapon
   bullet: {fileID: 909277036563663858, guid: 468c5c83f534eb64c9e0d870b01225c5, type: 3}
-  attackDelay: 0.5
+  attackDelayRange: {x: 0.5, y: 0.75}
   reflectAtkRate: 10
   fixDamage: 5
   bulletSpeed: 60
+  bulletSizeRate: 1
+  shootingPoint: {fileID: 0}
   isLookingDestination: 0
   rotArg: 0
 --- !u!1 &4423645010472863672
@@ -124,6 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 30
+  rotArgRate: {x: 1, y: 1, z: 1}
   takeDistanceFromTargetRange: {x: 0, y: 0}
   takeDistanceFromTarget: 0
 --- !u!114 &201683722416331667
@@ -138,6 +143,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfee86917f8d120459c8ab85eceb25e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tacticalCommand: 0
+  parentAuthority: {fileID: 0}
+  childrenAuthoritys: []
+  myOffsetPosition: {x: 0, y: 0, z: 0}
+  fleetAttackRange: 0
+  isFleetFire: 0
 --- !u!114 &647843345087333844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7588a6a03f0e99a4c92dc1e3c9818f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rateOfsizeOnLader: 1
   belongData: 0
 --- !u!114 &6922118276757918839
 MonoBehaviour:
@@ -163,6 +175,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62f9f8b2fc97be3439c47706adbab9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  status: {fileID: 0}
+  move: {fileID: 0}
+  authority: {fileID: 0}
+  belong: {fileID: 0}
+  gameManager: {fileID: 0}
   weapons:
   - {fileID: 7313412594887662237}
   - {fileID: 7133111429958275508}
