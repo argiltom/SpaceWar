@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     //インターフェースはインスペクターからアタッチ出来ない
     public List<IShip> ships = new List<IShip>();
     public List<BulletBase> bullets = new List<BulletBase>();
+    public IShip playerIship;
     // Start is called before the first frame update
     public static GameManager GetGameManager()
     {

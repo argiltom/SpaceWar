@@ -28,6 +28,7 @@ public class PlayerShipControllerVR : ControllerBase
     void Start()
     {
         ControllerBaseStart();
+        gameManager.playerIship = this;
         rightController = rightOVAControllerPrefab.GetComponent<OVRControllerHelper>().m_controller;
         leftController = leftOVAControllerPrefab.GetComponent<OVRControllerHelper>().m_controller;
     }

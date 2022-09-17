@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameClearVR.unity
     guid: 2583ade24860b8f449e261f9fb185dcf
+  - enabled: 1
+    path: Assets/Scenes/GameOverVR.unity
+    guid: dfd2f34365521bb4dbfc609b9ae64786
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 99acdb892ec242d42ab7d8841471a021
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5524e9606d30b5f41bec5f93beac36b3,
       type: 2}

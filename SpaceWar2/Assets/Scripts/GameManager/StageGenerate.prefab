@@ -48,8 +48,8 @@ MonoBehaviour:
   isStageGenerated: 0
   genSets:
   - belongEnum: 0
-    minVecPos: {x: -500, y: -500, z: -500}
-    maxVecPos: {x: 500, y: 500, z: 500}
+    minVecPos: {x: -700, y: -500, z: -500}
+    maxVecPos: {x: 700, y: 500, z: 500}
     fleetObj: {fileID: 3331654901498203485, guid: ec5ce830d5f089c418b3f1c6af383745,
       type: 3}
     generateTime: 5
@@ -60,8 +60,8 @@ MonoBehaviour:
       type: 3}
     generateTime: 1
   - belongEnum: 1
-    minVecPos: {x: -500, y: -500, z: 4000}
-    maxVecPos: {x: 500, y: 500, z: 4500}
+    minVecPos: {x: -700, y: -500, z: 3000}
+    maxVecPos: {x: 700, y: 500, z: 3500}
     fleetObj: {fileID: 3331654901498203485, guid: ec5ce830d5f089c418b3f1c6af383745,
       type: 3}
     generateTime: 5
@@ -72,14 +72,14 @@ MonoBehaviour:
       type: 3}
     generateTime: 1
   - belongEnum: 1
-    minVecPos: {x: -3000, y: -100, z: 4000}
-    maxVecPos: {x: 1000, y: 300, z: 4500}
+    minVecPos: {x: -3000, y: -100, z: 3000}
+    maxVecPos: {x: 1000, y: 300, z: 3500}
     fleetObj: {fileID: 9124396794178412120, guid: 90b0acb76476a574ebe964c1420d23e5,
       type: 3}
     generateTime: 1
   - belongEnum: 1
-    minVecPos: {x: -100, y: -100, z: 4000}
-    maxVecPos: {x: 300, y: 300, z: 4500}
+    minVecPos: {x: -100, y: -100, z: 3000}
+    maxVecPos: {x: 300, y: 300, z: 3500}
     fleetObj: {fileID: 3331654901498203485, guid: 5f17890456f153e408f86ce12542c5db,
       type: 3}
     generateTime: 1
@@ -90,8 +90,8 @@ MonoBehaviour:
       type: 3}
     generateTime: 1
   - belongEnum: 1
-    minVecPos: {x: -2000, y: -100, z: 4000}
-    maxVecPos: {x: 2000, y: 300, z: 4500}
+    minVecPos: {x: -2000, y: -100, z: 3000}
+    maxVecPos: {x: 2000, y: 300, z: 3500}
     fleetObj: {fileID: 3331654901498203485, guid: d5e5a4b31862f1443b4e88df8f456071,
       type: 3}
     generateTime: 1
@@ -108,6 +108,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageGenerator: {fileID: 1335397375197711604}
+  gameOverEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5552434379853411811}
+        m_MethodName: GameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   clearEvent:
     m_PersistentCalls:
       m_Calls:

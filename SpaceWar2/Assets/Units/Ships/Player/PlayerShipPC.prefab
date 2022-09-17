@@ -556,7 +556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f4adc7937717b44bea54e4fcc346ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHp: 1000
+  MaxHp: 4000
   hp: 0
   atk: 10
   def: 1

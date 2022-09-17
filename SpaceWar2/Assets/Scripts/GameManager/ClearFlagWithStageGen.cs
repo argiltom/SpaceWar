@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class ClearFlagWithStageGen : MonoBehaviour
 { 
     [SerializeField] StageGenerator stageGenerator;
+    [SerializeField] UnityEvent gameOverEvent;
     [SerializeField] UnityEvent clearEvent;
     GameManager gameManager;
     // Start is called before the first frame update
@@ -28,6 +29,11 @@ public class ClearFlagWithStageGen : MonoBehaviour
             {
                 clearEvent.Invoke();
             };
+
+            if (gameManager.playerIship.Status.IsDead)
+            {
+                gameOverEvent.Invoke();
+            }
         }
     }
 }

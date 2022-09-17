@@ -45,6 +45,14 @@ public class UIController : MonoBehaviour
     {
         SceneManager.LoadScene("GameClearVR");
     }
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
+    public void GameOverVR()
+    {
+        SceneManager.LoadScene("GameOverVR");
+    }
     public void ExitGame()
     {
 #if UNITY_EDITOR

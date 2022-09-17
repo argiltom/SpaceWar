@@ -14,7 +14,7 @@ public class PlayerShipControllerPC : ControllerBase
     void Start()
     {
         ControllerBaseStart();
-        
+        gameManager.playerIship = this;
     }
 
     // Update is called once per frame
