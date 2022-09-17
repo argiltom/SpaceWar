@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameTitleVR.unity
     guid: 9a1fa948ec2451244a0456c818ada8fb
   - enabled: 1
@@ -17,13 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameClear.unity
     guid: 5eb0febdaf7261340a44d0f86c032ac9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/presentationSceneVR.unity
     guid: d9ecabca7fd1d1a4ea70e435ca15c650
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameClearVR.unity
     guid: 2583ade24860b8f449e261f9fb185dcf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameOverVR.unity
     guid: dfd2f34365521bb4dbfc609b9ae64786
   - enabled: 1
